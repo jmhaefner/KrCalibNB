@@ -1,5 +1,5 @@
 import nbformat
-import os
+import os, os.path
 import time
 from nbconvert.preprocessors import ExecutePreprocessor
 import subprocess
@@ -55,6 +55,7 @@ for run_number in found_runs:
     print()
     run_directory = "/Volumes/NEXT_data/IC_Data/kdst/"+str(run_number)+"/"
     print('run directory =', run_directory)
+    num_files_in_dir = len(os.listdir(run_directory))-1
 
     try:
         # Duplicate the flexible notebook
@@ -63,6 +64,7 @@ for run_number in found_runs:
         flex_nb = open(flex_nb_location, "r")
         mod_contents = flex_nb.read()
         mod_contents = mod_contents.replace("<RUN_NUMBER>", str(int(run_number)))
+        mod_contents = mod_contents.replace("<NUM_FILES>", str(int(num_files_in_dir)))
         flex_nb.close()
 
         out_nb_prefix = "/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/single_map_correction_"
