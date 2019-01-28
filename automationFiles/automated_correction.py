@@ -20,12 +20,20 @@ max_time = 1200 # max seconds for a single cell
 
 # bad_runs = [ 6519, 6518, 6514, 6507, 6476, 6405, 6404, 6402, 6401, 6400, 6399, 6398, 6397, 6396, 6393, 6363, 6343, 6586 ]
 
+reduce_bin_number = False
+
 if len(sys.argv) == 2:
-    min_run = int(sys.argv[1])
-    max_run = min_run + 1
+    run_min = int(sys.argv[1])
+    run_max = run_min + 1
 elif len(sys.argv) == 3:
-    min_run = int(sys.argv[1])
-    max_run = int(sys.argv[2])
+    if int(sys.argv[2]) == 1:
+        run_min = int(sys.argv[1])
+        run_max = run_min + 1
+        reduce_bin_number = True
+        print('CORRECTING WITH REDUCED BIN NUMBER')
+    else:
+        run_min = int(sys.argv[1])
+        run_max = int(sys.argv[2])
 else:
     print('Run as \"python automated_summary.py <run_no>\" or \"python automated_summary.py <run_min> <run_max>\"')
     exit()
@@ -40,7 +48,7 @@ for file_name in dirlist:
         check_number = check_number[:check_number.find('_')]
         if len(check_number) == 4 and is_int(check_number):
 
-            if int(check_number) >= min_run and int(check_number) < max_run:
+            if int(check_number) >= run_min and int(check_number) < run_max:
                 found_runs.append(check_number)
     except:
         pass
@@ -56,6 +64,9 @@ for run_number in found_runs:
     run_directory = "/Volumes/NEXT_data/IC_Data/kdst/"+str(run_number)+"/"
     print('run directory =', run_directory)
     num_files_in_dir = len(os.listdir(run_directory))-1
+    # force the program to reduce the bin number by lying about how many files are in the directory
+    if reduce_bin_number:
+        num_files_in_dir = 5000
 
     try:
         # Duplicate the flexible notebook
@@ -64,6 +75,7 @@ for run_number in found_runs:
         flex_nb = open(flex_nb_location, "r")
         mod_contents = flex_nb.read()
         mod_contents = mod_contents.replace("<RUN_NUMBER>", str(int(run_number)))
+        print('replacing num files with', str(int(num_files_in_dir)))
         mod_contents = mod_contents.replace("<NUM_FILES>", str(int(num_files_in_dir)))
         flex_nb.close()
 

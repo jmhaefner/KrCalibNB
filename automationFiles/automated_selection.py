@@ -1,4 +1,4 @@
-import os
+import os, os.path
 import time
 from nbconvert.preprocessors import ExecutePreprocessor
 import nbformat
@@ -6,12 +6,20 @@ import subprocess
 import sys
 # adapted from http://tritemio.github.io/smbits/2016/01/02/execute-notebooks/
 
+reduce_bin_number = False
+
 if len(sys.argv) == 2:
     run_min = int(sys.argv[1])
     run_max = run_min + 1
 elif len(sys.argv) == 3:
-    run_min = int(sys.argv[1])
-    run_max = int(sys.argv[2])
+    if int(sys.argv[2]) == 1:
+        run_min = int(sys.argv[1])
+        run_max = run_min + 1
+        reduce_bin_number = True
+        print('SELECTING WITH REDUCED BIN NUMBER')
+    else:
+        run_min = int(sys.argv[1])
+        run_max = int(sys.argv[2])
 else:
     print('Run as \"python automated_summary.py <run_no>\" or \"python automated_summary.py <run_min> <run_max>\"')
     exit()
@@ -26,6 +34,10 @@ for run_number in range(run_min, run_max):
 
     print()
     run_directory = "/Volumes/NEXT_data/IC_Data/kdst/"+str(run_number)+"/"
+    num_files_in_dir = len(os.listdir(run_directory))-1
+    # force the program to reduce the bin number by lying about how many files are in the directory
+    if reduce_bin_number:
+        num_files_in_dir = 5000
 
     #if not run_number in bad_runs:
     #    print('SKIPPING', run_number)
@@ -60,6 +72,7 @@ for run_number in range(run_min, run_max):
         mod_contents = mod_contents.replace("<RUN_PARAMS>", "run = "+str(int(run_number)))
         mod_contents = mod_contents.replace("<RUN_NUMBER>", str(int(run_number)))
         mod_contents = mod_contents.replace("<LAST_FILE>", str(int(last_file)))
+        mod_contents = mod_contents.replace("<NUM_FILES>", str(int(num_files_in_dir)))
         mod_contents = mod_contents.replace("<END_TAGS>", end_tags)
         flex_nb.close()
 
