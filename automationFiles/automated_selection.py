@@ -24,7 +24,7 @@ else:
     print('Run as \"python automated_summary.py <run_no>\" or \"python automated_summary.py <run_min> <run_max>\"')
     exit()
 
-max_time = 1200 # max seconds for a single cell
+max_time = 4800 # max seconds for a single cell. 1200 = 20 m
 
 low_stat_runs = [ 6519, 6402, 6401, 6400, 6343 ] # fail at bin size 50 but do ok at smaller
 crit_low_runs = [ 6518, 6514, 6507, 6476, 6405, 6404, 6399, 6398, 6397, 6396, 6393, 6363, 6586 ] # too low to ever work
