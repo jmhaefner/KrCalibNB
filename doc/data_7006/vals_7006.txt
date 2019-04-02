@@ -1,10 +1,10 @@
 runNumber=7006
-lastFile=2837
-totalNumS2=713822
-totalNumEvt=627203
+lastFile=5872
+totalNumS2=1827034
+totalNumEvt=1606327
 fracS1=0.81
 fracS2=0.97
-fracS1S2=0.78
+fracS1S2=0.79
 s1Min=3
 s1Max=25
 s2MinPMT=3000
