@@ -1,0 +1,80 @@
+\documentclass[9pt]{beamer}
+\usetheme{Madrid}
+\usepackage{mathtools}
+\usepackage[T1]{fontenc}
+\usepackage[english,french,spanish,italian]{babel}
+\usepackage[useregional]{datetime2}
+\usepackage{bm}
+\usepackage{esvect}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{empheq}
+\usepackage[many]{tcolorbox}
+\input{pool/NextDefs.tex}
+
+%$\vv{\bm{L}}
+
+\title{Krypton Calibration}
+
+\newcommand{\runNumber}{6348}
+
+\subtitle{Run \runNumber}
+
+\author{Krypton Calibration Group}
+
+%\institute{Donostia International Physics Center (DIPC)} % (optional)
+
+\date % (optional)
+%{PHYSIS, SAN SEBASTIAN: 2-6 OCTOBER 2018}
+
+%\logo{\includegraphics[height=0.5cm]{dipc.png}
+%\includegraphics[height=0.5cm]{IB.png}}
+
+
+\tcbset{highlight math style={enhanced,
+  colframe=red!60!black,colback=yellow!50!white,arc=4pt,boxrule=1pt,
+  }}
+
+\newtcbox{\mybox}[1][]{nobeforeafter,math upper,tcbox raise base,
+  enhanced,frame hidden,boxrule=0pt,interior style={top color=green!10!white,
+  bottom color=green!10!white,middle color=green!50!yellow},
+  fuzzy halo=1pt with green,drop large lifted shadow,#1}
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the
+%beginning of each section and highlights the current section:
+
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Table of Contents}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+%------------------------------------------------------------
+
+\begin{document}
+\selectlanguage{english}
+%The next statement creates the title page.
+\frame{\titlepage}
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+
+%\begin{frame}
+%\frametitle{Table of Contents}
+%\tableofcontents
+%\end{frame}
+
+%---------------------------------------------------------
+
+
+%\section{Run \runNumber}
+
+%---------------------------------------------------------
+
+\input{slides/run\runNumber.tex}
+
+
+\end{document}
