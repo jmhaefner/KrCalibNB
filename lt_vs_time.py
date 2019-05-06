@@ -2,8 +2,12 @@ import os
 import matplotlib.pyplot as plt
 print('hello world')
 
-minRun = 6000
-maxRun = 8000
+# Makes a plot of lifetime through the listed runs,
+# with the date on the x axis. Also outputs a .txt
+# containing run - date - lifetime
+
+minRun = 6341
+maxRun = 6486
 allRuns = []
 allLts = []
 allDates = []
@@ -114,10 +118,16 @@ for date in allDates:
     mplDate = datetime.date(date[0], date[1], date[2])
     mplAllDates.append(mplDate)
 
-print('Needed runs:')
+print('Half done runs:')
 for nRun in neededRuns:
     print(nRun, end = ' ')
 print()
+
+outputTxt = open('lt_vs_time_'+str(minRun)+'_'+str(maxRun)+'.txt','w+')
+outputTxt.write('Run Date Lifetime\n')
+for i in range(len(allRuns)):
+    outputTxt.write(str(allRuns[i])+' '+str(mplAllDates[i])+' '+str(allLts[i])+'\n')
+outputTxt.close()
 
 # plt.plot_date(mplAllDates, allLts)
 # plt.show()
