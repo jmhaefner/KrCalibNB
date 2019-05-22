@@ -10,6 +10,7 @@ minRun = 6341
 maxRun = 6486
 allRuns = []
 allLts = []
+allLtus = []
 allDates = []
 
 neededRuns = []
@@ -81,6 +82,8 @@ for nRun in range(minRun, maxRun):
         for line in readText.readlines():
             if line.find('lt=') != -1:
                 lt = line[3:len(line)-1]
+            if line.find('ltu=') != -1:
+                ltu = line[4:len(line)-1]
         readText.close()
 
         # Determine the date
@@ -99,9 +102,12 @@ for nRun in range(minRun, maxRun):
         if lt != 'nan' and not dateFailed:
             allRuns.append(nRun)
             allLts.append(float(lt))
+            allLtus.append(float(ltu))
             allDates.append(date)
         if lt == 'nan':
             print('WARNING: NAN IN RUN '+str(nRun))
+        if ltu == 'nan':
+            print('WARNING: NAN U IN RUN '+str(nRun))
         if dateFailed:
             print('WARNING: BAD DATE IN '+str(nRun))
     else:
@@ -124,9 +130,9 @@ for nRun in neededRuns:
 print()
 
 outputTxt = open('lt_vs_time_'+str(minRun)+'_'+str(maxRun)+'.txt','w+')
-outputTxt.write('Run Date Lifetime\n')
+outputTxt.write('Run Date Lifetime Uncertainty\n')
 for i in range(len(allRuns)):
-    outputTxt.write(str(allRuns[i])+' '+str(mplAllDates[i])+' '+str(allLts[i])+'\n')
+    outputTxt.write(str(allRuns[i])+' '+str(mplAllDates[i])+' '+str(allLts[i])+' '+str(allLtus[i])+'\n')
 outputTxt.close()
 
 # plt.plot_date(mplAllDates, allLts)
