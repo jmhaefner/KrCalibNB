@@ -6,8 +6,8 @@ print('hello world')
 # with the date on the x axis. Also outputs a .txt
 # containing run - date - lifetime
 
-minRun = 6341
-maxRun = 6486
+minRun = 6977
+maxRun = 7116
 allRuns = []
 allLts = []
 allLtus = []
@@ -137,3 +137,21 @@ outputTxt.close()
 
 # plt.plot_date(mplAllDates, allLts)
 # plt.show()
+
+import matplotlib.ticker as mticker
+
+fig, ax = plt.subplots()
+ax.plot(mplAllDates, allLts, 'o')
+fig.autofmt_xdate()
+numTicks = 8
+ax.xaxis.set_major_locator(mticker.MaxNLocator(numTicks+1))
+plt.ylabel('Lifetime')
+# ax.set_ylim(poorCutoff, 15)
+plt.xlabel('Date')
+plt.grid(b=True, linestyle='--')
+
+plt.show()
+
+
+print(mplAllDates)
+print(allLts)

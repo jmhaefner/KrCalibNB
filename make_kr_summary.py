@@ -1,8 +1,11 @@
 import sys
 
-for i in range(len(sys.argv)-1):
+runs = sys.argv[1:]
+runs.reverse()
 
-    run = str(sys.argv[i+1])
+for i in range(len(runs)):
+
+    run = str(runs[i])
 
     print()
     print('Run '+run)

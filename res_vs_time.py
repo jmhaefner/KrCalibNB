@@ -197,7 +197,8 @@ for ri in range(len(allRVecs[0])):
         numTicks = 8
         ax.xaxis.set_major_locator(mticker.MaxNLocator(numTicks+1))
         plt.ylabel('Resolution (r < '+str(allRVecs[0][ri])+', z < '+str(allZVecs[0][zi])+')')
-        ax.set_ylim(lowerCutoff,poorCutoff)
+        # ax.set_ylim(lowerCutoff,poorCutoff)
+        ax.set_ylim(3.55,4)
         plt.xlabel('Date')
         plt.show()
 
