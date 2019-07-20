@@ -2,7 +2,7 @@
 #
 # Assumes the existance of krCalib_TPLT.tex, and slides/runTPLT.tex.
 # Creates version of those two files where TPLT is replaced by the
-# run n umber. krCalib_ABCD.tex should be typesetable by TeXShop.
+# run number. krCalib_ABCD.tex should be typesetable by TeXShop.
 import sys
 
 if not len(sys.argv) == 2:

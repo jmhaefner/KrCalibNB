@@ -21,6 +21,8 @@ max_time = 1200 # max seconds for a single cell
 # bad_runs = [ 6519, 6518, 6514, 6507, 6476, 6405, 6404, 6402, 6401, 6400, 6399, 6398, 6397, 6396, 6393, 6363, 6343, 6586 ]
 
 reduce_bin_number = False
+found_runs = []
+runs_found = False
 
 if len(sys.argv) == 2:
     run_min = int(sys.argv[1])
@@ -35,10 +37,15 @@ elif len(sys.argv) == 3:
         run_min = int(sys.argv[1])
         run_max = int(sys.argv[2])
 else:
-    print('Run as \"python automated_summary.py <run_no>\" or \"python automated_summary.py <run_min> <run_max>\"')
-    exit()
+    try:
+        for i in range(len(sys.argv)):
+            if i > 0:
+                found_runs.append(str(int(sys.argv[i])))
+        runs_found = True
+    except:
+        print('Run as \"python automated_summary.py <run_no>\" or \"python automated_summary.py <run_min> <run_max>\"')
+        exit()
 
-found_runs = []
 dst_directory = "/Volumes/NEXT_data/IC_Data/dst/"
 dirlist = os.listdir(dst_directory)
 for file_name in dirlist:
@@ -46,8 +53,7 @@ for file_name in dirlist:
         check_number = file_name
         check_number = check_number[check_number.find('_')+1:]
         check_number = check_number[:check_number.find('_')]
-        if len(check_number) == 4 and is_int(check_number):
-
+        if len(check_number) == 4 and is_int(check_number) and not runs_found:
             if int(check_number) >= run_min and int(check_number) < run_max:
                 found_runs.append(check_number)
     except:
