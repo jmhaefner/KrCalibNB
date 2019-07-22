@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 MAY 2019 07:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 JUL 2019 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2278,7 +2278,11 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ))
-No file krCalib_7115.aux.
+(./krCalib_7115.aux
+
+LaTeX Warning: Label `r7115.data' multiply defined.
+
+)
 \openout1 = `krCalib_7115.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -2295,6 +2299,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2374,6 +2379,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
+
+(./krCalib_7115.out) (./krCalib_7115.out)
 \@outlinefile=\write7
 \openout7 = `krCalib_7115.out'.
 
@@ -2549,9 +2556,9 @@ File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-)
-No file krCalib_7115.nav.
+) (./krCalib_7115.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -2583,12 +2590,12 @@ es/run7115.tex
 [2
 
 ]
-<img/r7115/runTime.png, id=79, 433.62pt x 289.08pt>
+<img/r7115/runTime.png, id=81, 433.62pt x 289.08pt>
 File: img/r7115/runTime.png Graphic file (type png)
 <use img/r7115/runTime.png>
 Package pdftex.def Info: img/r7115/runTime.png  used on input line 32.
 (pdftex.def)             Requested size: 155.5619pt x 103.70702pt.
-<img/r7115/runEvt.png, id=81, 722.7pt x 433.62pt>
+<img/r7115/runEvt.png, id=83, 722.7pt x 433.62pt>
 File: img/r7115/runEvt.png Graphic file (type png)
 <use img/r7115/runEvt.png>
 Package pdftex.def Info: img/r7115/runEvt.png  used on input line 32.
@@ -2604,7 +2611,7 @@ l.70 \end{frame}
                  [4
 
 ]
-<img/r7115/s1.png, id=142, 722.7pt x 722.7pt>
+<img/r7115/s1.png, id=144, 722.7pt x 722.7pt>
 File: img/r7115/s1.png Graphic file (type png)
 <use img/r7115/s1.png>
 Package pdftex.def Info: img/r7115/s1.png  used on input line 80.
@@ -2612,7 +2619,7 @@ Package pdftex.def Info: img/r7115/s1.png  used on input line 80.
  [5
 
  <./img/r7115/s1.png>]
-<img/r7115/s2.png, id=170, 722.7pt x 722.7pt>
+<img/r7115/s2.png, id=172, 722.7pt x 722.7pt>
 File: img/r7115/s2.png Graphic file (type png)
 <use img/r7115/s2.png>
 Package pdftex.def Info: img/r7115/s2.png  used on input line 89.
@@ -2620,7 +2627,7 @@ Package pdftex.def Info: img/r7115/s2.png  used on input line 89.
  [6
 
  <./img/r7115/s2.png>]
-<img/r7115/xy.png, id=198, 722.7pt x 578.16pt>
+<img/r7115/xy.png, id=200, 722.7pt x 578.16pt>
 File: img/r7115/xy.png Graphic file (type png)
 <use img/r7115/xy.png>
 Package pdftex.def Info: img/r7115/xy.png  used on input line 99.
@@ -2628,7 +2635,7 @@ Package pdftex.def Info: img/r7115/xy.png  used on input line 99.
  [7
 
  <./img/r7115/xy.png>]
-<img/r7115/s1s2q.png, id=227, 1011.78pt x 867.24pt>
+<img/r7115/s1s2q.png, id=229, 1011.78pt x 867.24pt>
 File: img/r7115/s1s2q.png Graphic file (type png)
 <use img/r7115/s1s2q.png>
 Package pdftex.def Info: img/r7115/s1s2q.png  used on input line 108.
@@ -2636,27 +2643,27 @@ Package pdftex.def Info: img/r7115/s1s2q.png  used on input line 108.
  [8
 
  <./img/r7115/s1s2q.png>]
-<img/r7115/R_phi_lt1.png, id=256, 1011.78pt x 433.62pt>
+<img/r7115/R_phi_lt1.png, id=258, 1011.78pt x 433.62pt>
 File: img/r7115/R_phi_lt1.png Graphic file (type png)
 <use img/r7115/R_phi_lt1.png>
 Package pdftex.def Info: img/r7115/R_phi_lt1.png  used on input line 122.
 (pdftex.def)             Requested size: 138.27608pt x 59.25737pt.
-<img/r7115/R_phi_lt2.png, id=257, 1011.78pt x 433.62pt>
+<img/r7115/R_phi_lt2.png, id=259, 1011.78pt x 433.62pt>
 File: img/r7115/R_phi_lt2.png Graphic file (type png)
 <use img/r7115/R_phi_lt2.png>
 Package pdftex.def Info: img/r7115/R_phi_lt2.png  used on input line 122.
 (pdftex.def)             Requested size: 138.27608pt x 59.25737pt.
-<img/r7115/R_phi_lt3.png, id=258, 1011.78pt x 433.62pt>
+<img/r7115/R_phi_lt3.png, id=260, 1011.78pt x 433.62pt>
 File: img/r7115/R_phi_lt3.png Graphic file (type png)
 <use img/r7115/R_phi_lt3.png>
 Package pdftex.def Info: img/r7115/R_phi_lt3.png  used on input line 122.
 (pdftex.def)             Requested size: 138.27608pt x 59.25737pt.
-<img/r7115/R_phi_lt4.png, id=259, 1011.78pt x 433.62pt>
+<img/r7115/R_phi_lt4.png, id=261, 1011.78pt x 433.62pt>
 File: img/r7115/R_phi_lt4.png Graphic file (type png)
 <use img/r7115/R_phi_lt4.png>
 Package pdftex.def Info: img/r7115/R_phi_lt4.png  used on input line 122.
 (pdftex.def)             Requested size: 138.27608pt x 59.25737pt.
-<img/r7115/R_phi_lt5.png, id=260, 1011.78pt x 433.62pt>
+<img/r7115/R_phi_lt5.png, id=262, 1011.78pt x 433.62pt>
 File: img/r7115/R_phi_lt5.png Graphic file (type png)
 <use img/r7115/R_phi_lt5.png>
 Package pdftex.def Info: img/r7115/R_phi_lt5.png  used on input line 122.
@@ -2665,7 +2672,7 @@ Package pdftex.def Info: img/r7115/R_phi_lt5.png  used on input line 122.
 
  <./img/r7115/R_phi_lt1.png> <./img/r7115/R_phi_lt2.png> <./img/r7115/R_phi_lt3
 .png> <./img/r7115/R_phi_lt4.png> <./img/r7115/R_phi_lt5.png>]
-<img/r7115/maps.png, id=292, 1011.78pt x 722.7pt>
+<img/r7115/maps.png, id=294, 1011.78pt x 722.7pt>
 File: img/r7115/maps.png Graphic file (type png)
 <use img/r7115/maps.png>
 Package pdftex.def Info: img/r7115/maps.png  used on input line 132.
@@ -2673,7 +2680,7 @@ Package pdftex.def Info: img/r7115/maps.png  used on input line 132.
  [10
 
  <./img/r7115/maps.png>]
-<img/r7115/AverageLT.png, id=320, 867.24pt x 433.62pt>
+<img/r7115/AverageLT.png, id=322, 867.24pt x 433.62pt>
 File: img/r7115/AverageLT.png Graphic file (type png)
 <use img/r7115/AverageLT.png>
 Package pdftex.def Info: img/r7115/AverageLT.png  used on input line 142.
@@ -2681,7 +2688,7 @@ Package pdftex.def Info: img/r7115/AverageLT.png  used on input line 142.
  [11
 
  <./img/r7115/AverageLT.png>]
-<img/r7115/CorrectionLT.png, id=348, 1011.78pt x 578.16pt>
+<img/r7115/CorrectionLT.png, id=350, 1011.78pt x 578.16pt>
 File: img/r7115/CorrectionLT.png Graphic file (type png)
 <use img/r7115/CorrectionLT.png>
 Package pdftex.def Info: img/r7115/CorrectionLT.png  used on input line 152.
@@ -2689,7 +2696,7 @@ Package pdftex.def Info: img/r7115/CorrectionLT.png  used on input line 152.
  [12
 
  <./img/r7115/CorrectionLT.png>]
-<img/r7115/RProfile.png, id=377, 867.24pt x 433.62pt>
+<img/r7115/RProfile.png, id=379, 867.24pt x 433.62pt>
 File: img/r7115/RProfile.png Graphic file (type png)
 <use img/r7115/RProfile.png>
 Package pdftex.def Info: img/r7115/RProfile.png  used on input line 162.
@@ -2697,22 +2704,22 @@ Package pdftex.def Info: img/r7115/RProfile.png  used on input line 162.
  [13
 
  <./img/r7115/RProfile.png>]
-<img/r7115/RProfileC.png, id=407, 867.24pt x 433.62pt>
+<img/r7115/RProfileC.png, id=409, 867.24pt x 433.62pt>
 File: img/r7115/RProfileC.png Graphic file (type png)
 <use img/r7115/RProfileC.png>
 Package pdftex.def Info: img/r7115/RProfileC.png  used on input line 176.
 (pdftex.def)             Requested size: 138.27608pt x 69.1358pt.
-<img/r7115/PhiProfile.png, id=408, 867.24pt x 433.62pt>
+<img/r7115/PhiProfile.png, id=410, 867.24pt x 433.62pt>
 File: img/r7115/PhiProfile.png Graphic file (type png)
 <use img/r7115/PhiProfile.png>
 Package pdftex.def Info: img/r7115/PhiProfile.png  used on input line 176.
 (pdftex.def)             Requested size: 138.27608pt x 69.1358pt.
-<img/r7115/ZProfile.png, id=409, 867.24pt x 433.62pt>
+<img/r7115/ZProfile.png, id=411, 867.24pt x 433.62pt>
 File: img/r7115/ZProfile.png Graphic file (type png)
 <use img/r7115/ZProfile.png>
 Package pdftex.def Info: img/r7115/ZProfile.png  used on input line 176.
 (pdftex.def)             Requested size: 138.27608pt x 69.1358pt.
-<img/r7115/TProfile.png, id=410, 867.24pt x 433.62pt>
+<img/r7115/TProfile.png, id=412, 867.24pt x 433.62pt>
 File: img/r7115/TProfile.png Graphic file (type png)
 <use img/r7115/TProfile.png>
 Package pdftex.def Info: img/r7115/TProfile.png  used on input line 176.
@@ -2721,7 +2728,7 @@ Package pdftex.def Info: img/r7115/TProfile.png  used on input line 176.
 
  <./img/r7115/RProfileC.png> <./img/r7115/PhiProfile.png> <./img/r7115/ZProfile
 .png> <./img/r7115/TProfile.png>]
-<img/r7115/ResoFit.png, id=443, 1300.86pt x 722.7pt>
+<img/r7115/ResoFit.png, id=445, 1300.86pt x 722.7pt>
 File: img/r7115/ResoFit.png Graphic file (type png)
 <use img/r7115/ResoFit.png>
 Package pdftex.def Info: img/r7115/ResoFit.png  used on input line 186.
@@ -2729,14 +2736,22 @@ Package pdftex.def Info: img/r7115/ResoFit.png  used on input line 186.
  [15
 
  <./img/r7115/ResoFit.png>]
-<img/r7115/ResoVsZR.png, id=471, 1011.78pt x 722.7pt>
+<img/r7115/ResoVsZR.png, id=472, 1011.78pt x 722.7pt>
 File: img/r7115/ResoVsZR.png Graphic file (type png)
 <use img/r7115/ResoVsZR.png>
 Package pdftex.def Info: img/r7115/ResoVsZR.png  used on input line 196.
 (pdftex.def)             Requested size: 276.55743pt x 197.5356pt.
  [16
 
- <./img/r7115/ResoVsZR.png>])
+ <./img/r7115/ResoVsZR.png>]
+<img/r7115/EffVsTime.png, id=500, 433.62pt x 289.08pt>
+File: img/r7115/EffVsTime.png Graphic file (type png)
+<use img/r7115/EffVsTime.png>
+Package pdftex.def Info: img/r7115/EffVsTime.png  used on input line 206.
+(pdftex.def)             Requested size: 276.55743pt x 184.37979pt.
+ [17
+
+ <./img/r7115/EffVsTime.png>])
 \tf@nav=\write8
 \openout8 = `krCalib_7115.nav'.
 
@@ -2751,24 +2766,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./krCalib_7115.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `krCalib_7115.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-Package rerunfilecheck Warning: File `krCalib_7115.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `krCalib_7115.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40762 strings out of 492649
- 855995 string characters out of 6129622
- 940248 words of memory out of 5000000
- 43920 multiletter control sequences out of 15000+600000
+ 40814 strings out of 492649
+ 856561 string characters out of 6129622
+ 940382 words of memory out of 5000000
+ 43961 multiletter control sequences out of 15000+600000
  554548 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,15n,95p,10407b,874s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2785,10 +2794,10 @@ al/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local
 exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texli
 ve/2018/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on krCalib_7115.pdf (16 pages, 792594 bytes).
+Output written on krCalib_7115.pdf (17 pages, 787647 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 35 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
