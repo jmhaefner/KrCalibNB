@@ -1,0 +1,15 @@
+runNumber=7377
+lastFile=7594
+totalNumS2=4422014
+totalNumEvt=1501533
+fracS1=0.27
+fracS2=0.27
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15
+date=2019-07-30
+labTempC=19.8

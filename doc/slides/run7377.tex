@@ -1,0 +1,206 @@
+\begin{frame}
+\frametitle{Conditions and data}
+
+\begin{table}[h!]
+\caption{Conditions and data for run \runNumber}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Conditions & Data \\
+\hline
+run number & \runNumber \\
+file range & (0,7594) \\
+date & 2019-07-30 \\
+lab temperature: & nan $\deg$ \\
+Total number of S2s  &  4422014 \\
+Total number of events & 1501533 \\
+\hline
+\end{tabular}
+\end{center}
+\label{r\runNumber.data}
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.45\textwidth]{img/r\runNumber/runTime.png}
+      \includegraphics[width=0.45\textwidth]{img/r\runNumber/runEvt.png}
+    \caption{Run data.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{S1 \& S2}
+
+\begin{table}[h!]
+\caption{S1 \& S2 for run \runNumber}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Conditions & Data \\
+\hline
+fraction of S1s & 0.27 \\
+fraction of S2s (1 S1) & 0.62 \\
+fraction 1 S2 \& 1 S1 & 0.09 \\
+\hline
+\end{tabular}
+\end{center}
+\label{r\runNumber.data}
+\end{table}%
+
+\begin{table}[h!]
+\caption{S1 \& S2 selection for run \runNumber}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Variables & Data \\
+\hline
+$s_1$~energy & 3 pes to 25 pes \\
+$s_2$~energy (PMTs) & 3000 pes to 13000 pes \\
+$s_2$~charge (SiPMs) & 200 pes to 800 pes \\
+$s_2$~width & 5 $\mu s$ to 15 $\mu s$ \\
+$n_{sipm}$~min & 15\\
+\hline
+\end{tabular}
+\end{center}
+\label{r\runNumber.sel}
+\end{table}%
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.6\textwidth]{img/r\runNumber/s1.png}
+    \caption{S1 distributions.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.6\textwidth]{img/r\runNumber/s2.png}
+    \caption{S2 distributions.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Control distributions}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.6\textwidth]{img/r\runNumber/xy.png}
+    \caption{XY distribution.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.7\textwidth]{img/r\runNumber/s1s2q.png}
+    \caption{S1, S2 \& Q distributions.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lifetime distributions}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/R_phi_lt1.png}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/R_phi_lt2.png} \\
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/R_phi_lt3.png}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/R_phi_lt4.png}\\
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/R_phi_lt5.png}
+    \caption{Distributions of lifetime and $E_0$~for 5 radial sectors (40, 80, 120, 160, 200).}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lifetime maps}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.7\textwidth]{img/r\runNumber/maps.png}
+    \caption{Lifetime and geometrical map.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lifetime maps}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.7\textwidth]{img/r\runNumber/AverageLT.png}
+    \caption{Average lifetime.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lifetime and geometry correction}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.7\textwidth]{img/r\runNumber/CorrectionLT.png}
+    \caption{Lifetime and geometry correction.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{R Profile showing R dropout}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.7\textwidth]{img/r\runNumber/RProfile.png}
+    \caption{R profile shows that fiducial volume must be $R < 180$mm.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Profiles after $R < 180$mm}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/RProfileC.png}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/PhiProfile.png} \\
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/ZProfile.png}
+      \includegraphics[width=0.4\textwidth]{img/r\runNumber/TProfile.png}
+    \caption{Profiles showing correction is robust.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resolution fits as a function of R and Z}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.8\textwidth]{img/r\runNumber/ResoFit.png}
+    \caption{Resolution fits.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Resolution as a function of R and Z}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.8\textwidth]{img/r\runNumber/ResoVsZR.png}
+    \caption{Resolution fits.}
+  \end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency over time}
+\begin{figure}
+  \begin{center}
+      \includegraphics[width=0.8\textwidth]{img/r\runNumber/EffVsTime.png}
+    \caption{Efficiency tracking over time.}
+  \end{center}
+\end{figure}
+\end{frame}

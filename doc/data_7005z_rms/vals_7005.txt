@@ -1,0 +1,6 @@
+runNumber=7005
+lastFile=2815
+totalNumS2=940121
+totalNumEvt=773767
+fracS1=0.75
+fracS2=0.75

@@ -1,0 +1,15 @@
+runNumber=7322
+lastFile=3164
+totalNumS2=2443541
+totalNumEvt=815324
+fracS1=0.28
+fracS2=0.28
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15
+date=2019-07-23
+labTempC=20.0

@@ -1,0 +1,15 @@
+runNumber=7326
+lastFile=2160
+totalNumS2=1433544
+totalNumEvt=394256
+fracS1=0.27
+fracS2=0.27
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15
+date=2019-07-24
+labTempC=19.9

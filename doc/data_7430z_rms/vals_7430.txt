@@ -1,0 +1,15 @@
+runNumber=7430
+lastFile=7615
+totalNumS2=2975868
+totalNumEvt=1481147
+fracS1=0.51
+fracS2=0.51
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15
+date=2019-08-09
+labTempC=20.5
