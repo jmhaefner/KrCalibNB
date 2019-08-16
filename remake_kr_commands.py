@@ -34,6 +34,4 @@ else:
             command = add_cmd(command, 'python automated_summary.py '+run)
             command = add_cmd(command, 'open -a TeXshop krCalib_'+run+'.tex')
 
-
-
 print(command)
