@@ -1,0 +1,16 @@
+runNumber=7225
+lastFile=16
+totalNumS2=7733
+totalNumEvt=3726
+fracS1=0.24
+fracS2=0.96
+fracS1S2=0.23
+s1Min=3
+s1Max=25
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15

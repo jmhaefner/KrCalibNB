@@ -3,6 +3,7 @@ import os
 
 select = True
 correct = True
+summarize = True
 
 def add_cmd(command, new_command, new_section = False):
     if len(command) == 0:
@@ -12,6 +13,9 @@ def add_cmd(command, new_command, new_section = False):
             return command + '; ' + new_command
         else:
             return command + ' && ' + new_command
+
+if not select or not correct or not summarize:
+    print('WARNING: NOT ALL FUNCTIONS WILL BE PERFORMED')
 
 command = ''
 tag = sys.argv[1]
@@ -23,8 +27,9 @@ for i in range(len(sys.argv)-2):
         command = add_cmd(command, 'python automated_selection_tagged.py '+run+' '+tag)
     if correct:
         command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag)
-    command = add_cmd(command, 'cd /Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/')
-    command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
-    command = add_cmd(command, 'open -a TeXshop krCalib_'+run+'_'+tag+'.tex')
+    if summarize:    
+        command = add_cmd(command, 'cd /Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/')
+        command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
+        command = add_cmd(command, 'open -a TeXshop krCalib_'+run+'_'+tag+'.tex')
 
 print(command)

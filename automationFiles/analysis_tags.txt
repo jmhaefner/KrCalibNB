@@ -4,6 +4,7 @@ The template notebooks are called
 kr_selection_and_filter_<analysis_tag>_TPLT.ipynb
 single_map_correction_<analysis_tag>_TPLT.ipynb
 
-st190819: standard analysis as of 19 Aug 2019.
+st190819: standard analysis as of 19 Aug 2019. Includes tracking of points where fit failed.
 rg190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map points above 8000 us or below 1000 us.
+rg_loose_190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map points above 10000 us or below 1000 us.
 z_rms: z location of events is determined using the rms of the S2, rather than the spacing between the S1 and the S2.

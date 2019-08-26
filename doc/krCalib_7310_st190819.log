@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 AUG 2019 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 AUG 2019 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2278,7 +2278,7 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ))
-No file krCalib_7310_st190819.aux.
+(./krCalib_7310_st190819.aux)
 \openout1 = `krCalib_7310_st190819.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -2295,6 +2295,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2374,6 +2375,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
+
+(./krCalib_7310_st190819.out) (./krCalib_7310_st190819.out)
 \@outlinefile=\write7
 \openout7 = `krCalib_7310_st190819.out'.
 
@@ -2606,5 +2609,4 @@ l.70 \end{frame}
 <img/r7310st190819/s1.png, id=142, 722.7pt x 722.7pt>
 File: img/r7310st190819/s1.png Graphic file (type png)
 <use img/r7310st190819/s1.png>
-Package pdftex.def Info: img/r7310st190819/s1.png  used on input line 80.
-(pdftex.def)             Requested size: 20
+Package pdftex.def Info: img/r7310st190819/s1.png  used on i
