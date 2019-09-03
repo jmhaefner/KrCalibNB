@@ -1,0 +1,16 @@
+runNumber=7487
+lastFile=2082
+totalNumS2=67378
+totalNumEvt=59743
+fracS1=1.0
+fracS2=0.69
+fracS1S2=0.0
+s1Min=3
+s1Max=25
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15

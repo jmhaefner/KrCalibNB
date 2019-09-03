@@ -1,0 +1,16 @@
+runNumber=7486
+lastFile=1988
+totalNumS2=122310
+totalNumEvt=104610
+fracS1=1.0
+fracS2=0.62
+fracS1S2=0.0
+s1Min=3
+s1Max=25
+s2MinPMT=3000
+s2MaxPMT=13000
+s2MinQ=200
+s2MaxQ=800
+widthMin=5
+widthMax=15
+numSipmMin=15

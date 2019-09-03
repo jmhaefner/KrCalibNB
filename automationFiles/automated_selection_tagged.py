@@ -44,7 +44,7 @@ for run_number in range(run_min, run_max):
 
         print('Max file number =', last_file)
 
-        end_tags = dirlist[-1][-23:-3]
+        end_tags = dirlist[-1][dirlist[-1].find('trigger1')+9:dirlist[-1].find('.h5')]
 
         # Make a duplicate of the flexible notebook
         print('Duplicating', run_number, '...')
