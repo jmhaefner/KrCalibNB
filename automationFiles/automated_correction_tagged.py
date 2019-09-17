@@ -26,8 +26,12 @@ runs_found = False
 run_min = int(sys.argv[1])
 run_max = run_min + 1
 tag = sys.argv[2]
+if len(sys.argv) > 3:
+    input_tag = sys.argv[3]
+else:
+    input_tag = tag
 
-dst_directory = "/Volumes/NEXT_data/IC_Data/"+tag+"/dst/"
+dst_directory = "/Volumes/NEXT_data/IC_Data/"+input_tag+"/dst/"
 dirlist = os.listdir(dst_directory)
 for file_name in dirlist:
     try:
@@ -62,6 +66,7 @@ for run_number in found_runs:
         print('replacing num files with', str(int(num_files_in_dir)))
         mod_contents = mod_contents.replace("<NUM_FILES>", str(int(num_files_in_dir)))
         mod_contents = mod_contents.replace("<ANALYSIS_TAG>", tag)
+        mod_contents = mod_contents.replace("<INPUT_TAG>", input_tag)
         flex_nb.close()
 
         out_nb_prefix = "/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/single_map_correction_"

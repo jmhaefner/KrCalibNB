@@ -8,3 +8,5 @@ st190819: standard analysis as of 19 Aug 2019. Includes tracking of points where
 rg190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map points above 8000 us or below 1000 us.
 rg_loose_190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map points above 10000 us or below 1000 us.
 z_rms: z location of events is determined using the rms of the S2, rather than the spacing between the S1 and the S2.
+RdropTest: for understanding why we see a dropoff in the E profile vs R
+x2rg190819: regularizing by killing fits with very bad errors (chi2), rather than with very strange values

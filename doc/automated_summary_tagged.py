@@ -7,11 +7,16 @@ import sys
 
 run_number = int(sys.argv[1])
 tag = sys.argv[2]
+if len(sys.argv) > 3:
+    input_tag = sys.argv[3]
+else:
+    input_tag = tag
 
 # Read in the variables and their values
 vals_file_location = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/data_'
-vals_file_location = vals_file_location+str(run_number)+tag+'/vals_'+str(run_number)+'.txt'
+vals_file_location = vals_file_location+str(run_number)+input_tag+'/vals_'+str(run_number)+'.txt'
 vals_file = open(vals_file_location, "r")
+
 
 vars = []
 vals = []

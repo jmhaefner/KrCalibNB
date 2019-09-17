@@ -1,9 +1,11 @@
 import sys
 import os
 
-select = True
+select = False
 correct = True
 summarize = True
+alt_input = True
+alt_input_tag = 'st190819'
 
 def add_cmd(command, new_command, new_section = False):
     if len(command) == 0:
@@ -26,10 +28,16 @@ for i in range(len(sys.argv)-2):
     if select:
         command = add_cmd(command, 'python automated_selection_tagged.py '+run+' '+tag)
     if correct:
-        command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag)
-    if summarize:    
+        if not alt_input:
+            command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag)
+        else:
+            command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag+' '+alt_input_tag)
+    if summarize:
         command = add_cmd(command, 'cd /Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/')
-        command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
+        if not alt_input:
+            command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
+        else:
+            command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag+' '+alt_input_tag)
         command = add_cmd(command, 'open -a TeXshop krCalib_'+run+'_'+tag+'.tex')
 
 print(command)
