@@ -9,4 +9,7 @@ rg190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map poi
 rg_loose_190819: standard analysis as of 19 Aug 2019, WITH regularization of lt map points above 10000 us or below 1000 us.
 z_rms: z location of events is determined using the rms of the S2, rather than the spacing between the S1 and the S2.
 RdropTest: for understanding why we see a dropoff in the E profile vs R
-x2rg190819: regularizing by killing fits with very bad errors (chi2), rather than with very strange values
+x2rg190819: regularizing by killing fits with very bad errors (chi2), rather than with very strange values. Then, replace the NaNs with neighborhood averages
+x2rgav190819: regularize by killing fits with very bad chi2. Replace NaNs with average value over the entire map
+x2rg_wide_190819: regularizing by killing fits with very bad errors (chi2), rather than with very strange values. Then, replace the NaNs with wide neighborhood averages
+x2rg_interp_190819: regularizing by killing fits with very bad errors (chi2), rather than with very strange values. Then, replace the NaNs with a polynomial fit over the whole map

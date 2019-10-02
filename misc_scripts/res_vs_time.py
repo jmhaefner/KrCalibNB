@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 # with the date on the x axis. Also outputs a .txt
 # containing run - date - lifetime
 
-minRun = 6300
+minRun = 7300
 # minRun = 7000
-maxRun = 7100
+maxRun = 7450
 allRuns = []
 allRes = []
 allResErrs = []

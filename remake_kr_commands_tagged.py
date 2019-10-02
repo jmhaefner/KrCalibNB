@@ -18,6 +18,12 @@ def add_cmd(command, new_command, new_section = False):
 
 if not select or not correct or not summarize:
     print('WARNING: NOT ALL FUNCTIONS WILL BE PERFORMED')
+    if select:
+        print('SELECTING.')
+    if correct:
+        print('CORRECTING.')
+    if summarize:
+        print('SUMMARIZING.')
 
 command = ''
 tag = sys.argv[1]
