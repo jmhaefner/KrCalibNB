@@ -5,8 +5,11 @@ allFailures = []
 numFailures = []
 runs = []
 
-minRun = 6900
-maxRun = 7600
+# minRun = 6900
+# maxRun = 7600
+
+minRun = 7504
+maxRun = 7506
 
 
 filePrefix = '/Volumes/NEXT_data/IC_Data/plots/st190819/text_outputs/outputs_'
