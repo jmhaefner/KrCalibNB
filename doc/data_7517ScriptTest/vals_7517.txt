@@ -1,0 +1,13 @@
+runNumber=7517
+lastFile=1
+totalNumS2=63176
+totalNumEvt=54091
+fracS1=0.78
+fracS2=0.97
+fracS1S2=0.75
+s1Min=3
+s1Max=25
+s2MinPMT=8000
+s2MaxPMT=14000
+s2MinQ=200
+s2MaxQ=800

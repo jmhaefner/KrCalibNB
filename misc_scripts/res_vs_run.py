@@ -10,6 +10,8 @@ allRuns = []
 minRun = 7318
 maxRun = 7436
 
+stochastic = 3.75
+removeStochastic = False
 
 filePrefix = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/plot_parameters/plot_outputs_'
 fileSuffix = '.txt'
@@ -41,6 +43,9 @@ for tag in range(len(myTags)):
 					resList = eval(line[3:len(line)-1])
 					res = resList[0][0]
 					resBad = resList[len(resList)-1][len(resList[0])-1]
+					if removeStochastic:
+						res = (res**2 - stochastic**2)**0.5
+						resBad = (resBad**2 - stochastic**2)**0.5
 					runsTag.append(run)
 				if line.find('FCE:') != -1:
 					errList = eval(line[4:len(line)-1])
