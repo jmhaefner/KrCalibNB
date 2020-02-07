@@ -1,8 +1,8 @@
 import sys
 import os
 
-select = True 
-correct = True
+select = False
+correct = False
 summarize = True
 alt_input = False
 alt_input_tag = 'st190819'
