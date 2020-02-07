@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 # with the date on the x axis. Also outputs a .txt
 # containing run - date - lifetime
 
-minRun = 7300
+minRun = 6890
 # minRun = 7000
-maxRun = 7450
+maxRun = 7572
 allRuns = []
 allRes = []
 allResErrs = []
@@ -19,7 +19,9 @@ allRVecs = []
 
 neededRuns = []
 
-def getDateFromRun(nRun, early):
+analysis_tag = 'st190819'
+
+def getDateFromRun(nRun, early, late):
 
     input_path  = "/Volumes/NEXT_data/IC_Data/kdst"
     output_path = "/Volumes/NEXT_data/IC_Data/dst"
@@ -27,10 +29,12 @@ def getDateFromRun(nRun, early):
     trigger     = 'trigger1'
     file_range  = 0, 3
 
-    if not early:
+    if not early and not late:
         tags = 'v0.9.9_20190111_krbg'
-    else:
+    elif early:
         tags = 'v0.9.9_20181011_krbg'
+    elif late:
+        tags = 'v0.9.9_20190801_krbg'
 
     from krcal.core.io_functions import filenames_from_paths
     input_dst_filenames, output_dst_filename, log_filename = filenames_from_paths(nRun,
@@ -73,8 +77,8 @@ def splitDate(myDate):
 
 
 for nRun in range(minRun, maxRun):
-    textFile = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/plot_parameters/plot_outputs_'+str(nRun)+'.txt'
-    dateFile = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/slides/run'+str(nRun)+'.tex'
+    textFile = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/plot_parameters/plot_outputs_'+str(nRun)+analysis_tag+'.txt'
+    dateFile = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/slides/run'+str(nRun)+'_'+analysis_tag+'.tex'
     textExists = os.path.isfile(textFile)
     dateExists = os.path.isfile(dateFile)
     if textExists and dateExists:
@@ -111,7 +115,7 @@ for nRun in range(minRun, maxRun):
         except:
             dateFailed = True
 
-        if res != 'nan' and not dateFailed:
+        if res != 'nan' and err != 'na' and not dateFailed:
             allRuns.append(nRun)
             allRes.append(float(res))
             allResErrs.append(float(err))
@@ -138,6 +142,10 @@ mplAllDates = []
 for date in allDates:
     mplDate = datetime.date(date[0], date[1], date[2])
     mplAllDates.append(mplDate)
+
+print('All runs:')
+for date, run, res in zip(allDates, allRuns, allRes):
+	print("{0}: Run {1} w/ res {2}".format(date, run, res))
 
 print('Half done runs:')
 for nRun in neededRuns:
@@ -194,11 +202,27 @@ for ri in range(len(allRVecs[0])):
         fig, ax = plt.subplots()
         ax.plot(mplAllDates, resVals, 'o')
         fig.autofmt_xdate()
-        numTicks = 8
+        ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter('%Y-%m-%d'))#fig.autofmt_xdate()
+        numTicks = 9
         ax.xaxis.set_major_locator(mticker.MaxNLocator(numTicks+1))
-        plt.ylabel('Resolution (r < '+str(allRVecs[0][ri])+', z < '+str(allZVecs[0][zi])+')')
+        plt.ylabel('Resolution (r < '+str(allRVecs[0][ri])+' mm, z < '+str(allZVecs[0][zi])+' mm)')
+        # ax.set_ylim(lowerCutoff,poorCutoff)
+        ax.set_ylim(3.55,5)
+        ax.grid()
+        plt.xlabel('Date')
+        plt.show()
+
+        # Plot regular resolutions
+        fig, ax = plt.subplots()
+        ax.plot(mplAllDates, resVals, 'o')
+        fig.autofmt_xdate()
+        ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter('%Y-%m-%d'))#fig.autofmt_xdate()
+        numTicks = 9
+        ax.xaxis.set_major_locator(mticker.MaxNLocator(numTicks+1))
+        plt.ylabel('Resolution (r < '+str(allRVecs[0][ri])+' mm, z < '+str(allZVecs[0][zi])+' mm)')
         # ax.set_ylim(lowerCutoff,poorCutoff)
         ax.set_ylim(3.55,4)
+        ax.grid()
         plt.xlabel('Date')
         plt.show()
 

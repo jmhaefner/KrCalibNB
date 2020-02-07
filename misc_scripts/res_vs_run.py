@@ -16,13 +16,11 @@ removeStochastic = False
 filePrefix = '/Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/ltMaps/plot_parameters/plot_outputs_'
 fileSuffix = '.txt'
 
-# myTags = ['x2rgav190819', 'rg190819', 'rg_loose_190819']
-# tagEnglish = ['X2; avg', 'Tight LT cut; avg', 'Loose LT cut; avg']
+myTags = ['x2rgav190819', 'rg190819', 'rg_loose_190819', 'Prgav190819']
+tagEnglish = ['X2; avg', 'Tight LT cut; avg', 'Loose LT cut; avg', 'Probability cut; avg']
 
-myTags = ['x2rgav190819','x2rg190819', 'x2rg_wide_190819', 'x2rg_interp_190819']
-tagEnglish = ['X2; avg', 'X2; nbhd', 'X2; wide nbhd', 'X2; interpolation']
-
-
+# myTags = ['x2rgav190819','x2rg190819', 'x2rg_wide_190819', 'x2rg_interp_190819', 'x2rg_local_190819']
+# tagEnglish = ['X2; avg', 'X2; nbhd', 'X2; wide nbhd', 'X2; global interpolation', 'X2; local interpolation']
 
 # myTags = ['x2rgav190819', 'rg190819', 'rg_loose_190819', 'x2rg190819', 'x2rg_wide_190819', 'x2rg_interp_190819']
 # tagEnglish = ['X2; avg', 'Tight LT cut; avg', 'Loose LT cut; avg', 'X2; nbhd', 'X2; wide nbhd', 'X2; interpolation']

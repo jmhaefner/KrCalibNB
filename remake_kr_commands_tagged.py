@@ -1,10 +1,10 @@
 import sys
 import os
 
-select = False 
+select = True 
 correct = True
 summarize = True
-alt_input = True
+alt_input = False
 alt_input_tag = 'st190819'
 
 def add_cmd(command, new_command, new_section = False):
