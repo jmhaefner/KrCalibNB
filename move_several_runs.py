@@ -10,10 +10,9 @@ def add_cmd(command, new_command, new_section = False):
             return command + ' && ' + new_command
 
 command = 'cd /Volumes/NEXT_data/IC_Data/kdst/'
-tag = sys.argv[1]
-for i in range(len(sys.argv)-2):
+for i in range(len(sys.argv)-1):
 
-    run = str(sys.argv[i+2])
+    run = str(sys.argv[i+1])
     command = add_cmd(command, 'python move_kdsts.py '+run, new_section = True)
 
 print(command)
