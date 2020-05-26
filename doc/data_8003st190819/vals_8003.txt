@@ -1,7 +1,7 @@
 runNumber=8003
-lastFile=1521
-totalNumS2=471448
-totalNumEvt=404266
+lastFile=3739
+totalNumS2=1168541
+totalNumEvt=1002900
 fracS1=0.77
 fracS2=0.98
 fracS1S2=0.75
@@ -14,5 +14,5 @@ s2MaxQ=800
 widthMin=5
 widthMax=15
 numSipmMin=15
-date=2020-05-11
+date=2020-05-12
 labTempC=20.1
