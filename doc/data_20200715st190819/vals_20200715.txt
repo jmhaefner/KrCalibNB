@@ -1,0 +1,4 @@
+runNumber=20200715
+lastFile=999
+totalNumS2=0
+totalNumEvt=0
