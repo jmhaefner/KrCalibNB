@@ -1,0 +1,7 @@
+runNumber=8114
+numFiles=656
+totalNumS2=85264
+totalNumEvt=82472
+fracS1=0.87
+fracS2=0.98
+fracS1S2=0.85

@@ -1,0 +1,9 @@
+runNumber=8120
+numFiles=2282
+totalNumS2=297972
+totalNumEvt=287825
+fracS1=0.87
+fracS2=0.98
+fracS1S2=0.85
+date=2020-09-24
+labTempC=20.2

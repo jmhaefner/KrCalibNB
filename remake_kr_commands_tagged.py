@@ -31,19 +31,11 @@ for i in range(len(sys.argv)-2):
     run = str(sys.argv[i+2])
     if correct or select:
         command = add_cmd(command, 'cd /Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/automationFiles', new_section = True)
-    if select:
-        command = add_cmd(command, 'python automated_selection_tagged.py '+run+' '+tag)
-    if correct:
-        if not alt_input:
-            command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag)
-        else:
-            command = add_cmd(command, 'python automated_correction_tagged.py '+run+' '+tag+' '+alt_input_tag)
+    if select or correct:
+        command = add_cmd(command, 'python auto_selcor.py '+run+' '+tag)
     if summarize:
         command = add_cmd(command, 'cd /Users/jmhaefner/Development/KryptonCalibration/KrCalibNB_JMH/KrCalibNB/doc/')
-        if not alt_input:
-            command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
-        else:
-            command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag+' '+alt_input_tag)
+        command = add_cmd(command, 'python automated_summary_tagged.py '+run+' '+tag)
         command = add_cmd(command, 'open -a TeXshop krCalib_'+run+'_'+tag+'.tex')
 
 print(command)

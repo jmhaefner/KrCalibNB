@@ -1,0 +1,11 @@
+runNumber=8071
+totalNumS2=676248
+totalNumEvt=666554
+date=1593436897.143000
+labTempC=nandate=2020-6-29-
+labTempC=nandate=2020-6-29
+labTempC=nandate=2020-06-29
+labTempC=20.0
+fracS1=0.89
+fracS2=0.99
+fracS1S2=0.88
