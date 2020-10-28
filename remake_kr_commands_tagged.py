@@ -1,8 +1,8 @@
 import sys
 import os
 
-select = True
-correct = True
+select = False
+correct = False
 summarize = True
 alt_input = False
 alt_input_tag = 'st190819'
@@ -16,6 +16,7 @@ def add_cmd(command, new_command, new_section = False):
         else:
             return command + ' && ' + new_command
 
+'''
 if not select or not correct or not summarize:
     print('WARNING: NOT ALL FUNCTIONS WILL BE PERFORMED')
     if select:
@@ -24,6 +25,7 @@ if not select or not correct or not summarize:
         print('CORRECTING.')
     if summarize:
         print('SUMMARIZING.')
+'''
 
 command = ''
 tag = sys.argv[1]
