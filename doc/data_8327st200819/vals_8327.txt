@@ -1,0 +1,9 @@
+runNumber=8327
+numFiles=2240
+totalNumS2=533590
+totalNumEvt=526515
+fracS1=0.87
+fracS2=0.99
+fracS1S2=0.87
+date=2020-12-17
+labTempC=23.5
