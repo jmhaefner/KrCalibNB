@@ -1,7 +1,9 @@
 runNumber=8361
-numFiles=598
-totalNumS2=153851
-totalNumEvt=151872
+numFiles=1837
+totalNumS2=471961
+totalNumEvt=465861
 fracS1=0.89
 fracS2=0.99
 fracS1S2=0.88
+date=2021-01-06
+labTempC=20.3

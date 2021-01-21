@@ -1,0 +1,9 @@
+runNumber=8365
+numFiles=1776
+totalNumS2=454536
+totalNumEvt=447469
+fracS1=0.88
+fracS2=0.99
+fracS1S2=0.87
+date=2021-01-10
+labTempC=20.4
