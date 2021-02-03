@@ -1,0 +1,9 @@
+runNumber=7472
+numFiles=9970
+totalNumS2=7899711
+totalNumEvt=6495746
+fracS1=0.8
+fracS2=0.88
+fracS1S2=0.7
+date=2019-08-25
+labTempC=nan
