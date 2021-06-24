@@ -1,9 +1,9 @@
 runNumber=8618
-numFiles=1352
-totalNumS2=353703
-totalNumEvt=349234
+numFiles=1906
+totalNumS2=498275
+totalNumEvt=491996
 fracS1=0.87
 fracS2=0.99
 fracS1S2=0.86
-date=2021-05-02
+date=2021-05-03
 labTempC=nan

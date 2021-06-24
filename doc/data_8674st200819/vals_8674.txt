@@ -1,0 +1,9 @@
+runNumber=8674
+numFiles=5249
+totalNumS2=1399518
+totalNumEvt=1367379
+fracS1=0.86
+fracS2=0.98
+fracS1S2=0.85
+date=2021-06-03
+labTempC=20.4
